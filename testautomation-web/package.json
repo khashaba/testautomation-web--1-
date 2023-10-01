@@ -1,4 +1,12 @@
 {
+  "name": "QA_ABN_AMRO",
+  "version": "1.0.0",
+  "description": "This is for ABN AMRO QA challange",
+  "author": "Ahmed Hassan",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
   "devDependencies": {
     "cypress": "^13.3.0",
     "typescript": "^5.2.2"
