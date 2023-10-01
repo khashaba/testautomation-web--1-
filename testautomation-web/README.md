@@ -1,16 +1,42 @@
-# Test assignment
-We are looking for Automation Engineers that have the mindset "only the sky is the limit"
-and "automation doesn't stop at testing, it's just a beginning!" ;)
+# ABN AMRO QA task
 
-The purpose of this test assignment is to assess the applicant's automation skills, allowing him/her to show the best they can do and how fast they can learn.
-It is an open assignment. There is no the right answer and there is no end goal other than proving yourself. Surprise us!
+This is a solution for ABN AMRO's QA automation task
 
-Make sure that you give detailed comments or descriptions of your tests.
-When the assignment is complete, please push your solution to Github(Gitlab) and send us the link.
-If you have any questions, please contact us back.
+# Introduction
+The purpose of this project is to automate tests for the UI, using an open-source framework. I decided to use [Cypress](https://www.cypress.io/) as I have extesive expereience using this framework, it's very readable, straight forward, light and simple to install and run, We can easily integrate it to almost all CI/CD tools, and it's perfectly fit the requirement for the task.
 
-Good luck!
 
-PS. We don't expect you to spend weeks (and sleepless nights) on doing it. Lets see how far you can get in 6-10 hours. We want to see how you approach and solve problems.
 
-And you will find the users to login in users.js.
+# Testing Approach
+I tried to make it simple, but also I tried to kept scalablity of the project in my mind, and that can be seen in using commands for repeated functions and folder structure, using environment variables to make it CI/CD ready
+The task is pretty simple, so I didn't expand much on it.
+I tried to use Cypress and testing best practices as much as I can.
+
+I used git for the branching and I added my tests in different commits.
+
+# Assumptions 
+
+- Some of the main login functionality is missing so I commented about them in the code
+- For simplicity I added the password to the env variables and committed  with  the code - which shouldn't be committed - but to make it easier for the interviewer to test the code.
+## Installation
+
+You can use npm to install it.
+First you need to make sure you have [node](https://nodejs.org/en/download) installed and then you need to install the dependencies from packages.json:
+
+
+```bash
+npm install
+```
+
+## Usage
+To run the test you have two ways:
+
+1. Interactive mood where you can lunch the browser and see the tests running:
+
+```bash
+npm run cypress:open
+```
+2. Headless mood where you can find a report after finishing the test and screenshots/videos for the failing tests:
+```bash
+npm run cypress:run
+```
