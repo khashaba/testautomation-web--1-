@@ -29,6 +29,7 @@ npm install
 ```
 
 ## Usage
+First you need to navigate to the application folder through the console.
 To run the test you have two ways:
 
 1. Interactive mood where you can lunch the browser and see the tests running:
